@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  @page { size: A4; margin: 2.5cm; }
+  body { font-family: 'Helvetica', 'Arial', sans-serif; color: #14213d; font-size: 11.5pt; line-height: 1.55; }
+  .letterhead { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #5B3DF5; padding-bottom: 14px; margin-bottom: 28px; }
+  .letterhead h1 { color: #5B3DF5; font-size: 20pt; margin: 0; }
+  .letterhead .tagline { color: #666; font-size: 9pt; margin-top: 4px; }
+  .meta { margin-bottom: 20px; }
+  .meta div { margin-bottom: 2px; }
+  h2 { color: #071427; font-size: 13pt; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  .clause { margin-bottom: 14px; }
+  .footer { margin-top: 40px; font-size: 9.5pt; color: #666; border-top: 1px solid #ddd; padding-top: 10px; }
+  .badge { display: inline-block; background: #5B3DF5; color: white; padding: 3px 10px; border-radius: 10px; font-size: 9pt; }
+</style>
+</head>
+<body>
+  <div class="letterhead">
+    <div>
+      <h1>InfoHub</h1>
+      <div class="tagline">Personal Data Rights &amp; Privacy Management</div>
+    </div>
+    <span class="badge">{{ jurisdiction }} DELETION REQUEST</span>
+  </div>
+
+  <div class="meta">
+    <div><strong>Date:</strong> {{ today }}</div>
+    <div><strong>To:</strong> {{ company_name }} — Data Protection Officer</div>
+    <div><strong>From:</strong> {{ user_name }} ({{ user_email }})</div>
+    <div><strong>Reference:</strong> {{ request_id }}</div>
+  </div>
+
+  <h2>Subject: Formal Request for Erasure of Personal Data</h2>
+
+  <div class="clause">
+    <p>Dear {{ company_name }} Data Protection Team,</p>
+    <p>
+      I am writing to formally request the deletion of all personal data you hold about me,
+      pursuant to {{ legal_basis }}. This request covers all personal data collected, processed,
+      or stored by {{ company_name }}, including but not limited to: {{ data_categories }}.
+    </p>
+  </div>
+
+  <div class="clause">
+    <h2>Legal Basis</h2>
+    <p>{{ legal_text }}</p>
+  </div>
+
+  <div class="clause">
+    <h2>Requested Actions</h2>
+    <p>
+      Please confirm in writing, within {{ response_days }} days of receipt of this letter, that you have:
+    </p>
+    <ol>
+      <li>Permanently deleted or anonymized all personal data associated with my account;</li>
+      <li>Instructed any third parties with whom this data was shared to do the same;</li>
+      <li>Ceased any further collection or processing of my personal data going forward.</li>
+    </ol>
+  </div>
+
+  <div class="clause">
+    <h2>Response Deadline</h2>
+    <p>
+      Under {{ jurisdiction }}, I understand you are required to respond by <strong>{{ deadline }}</strong>.
+      If I do not receive a satisfactory response by this date, I reserve the right to escalate this
+      complaint to the relevant supervisory authority.
+    </p>
+  </div>
+
+  <div class="footer">
+    Sent via InfoHub — this letter was generated on behalf of {{ user_name }} and reflects their
+    genuine request for the exercise of their statutory data rights.
+  </div>
+</body>
+</html>
