@@ -13,7 +13,7 @@ router = APIRouter(prefix="/api/auth", tags=["auth"])
 
 COOKIE_KWARGS = dict(
     httponly=True,
-    samesite="lax",
+    samesite="none" if settings.ENV == "production" else "lax",
     secure=settings.ENV == "production",
     max_age=settings.ACCESS_TOKEN_EXPIRE_MINUTES * 60,
 )
