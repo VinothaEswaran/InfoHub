@@ -2,7 +2,7 @@
 
 AI-Powered Personal Data Rights and Privacy Management Platform
 
-**Live demo:** [https://infohub-53o6.onrender.com](https://infohub-53o6.onrender.com)
+**Live demo:** [https://infohub-frontend-g3w0.onrender.com](https://infohub-frontend-g3w0.onrender.com)
 
 InfoHub helps you understand, monitor, and control where your personal data lives across the web. Track every company holding your information, get AI-generated summaries of their privacy policies, view an explainable privacy risk score, get notified of data breaches, and generate legally compliant deletion request letters under GDPR, India's DPDP Act, and CCPA, complete with deadline tracking.
 
