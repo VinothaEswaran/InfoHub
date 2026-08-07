@@ -2,6 +2,8 @@
 
 AI-Powered Personal Data Rights and Privacy Management Platform
 
+**Live demo:** [https://infohub-53o6.onrender.com](https://infohub-53o6.onrender.com)
+
 InfoHub helps you understand, monitor, and control where your personal data lives across the web. Track every company holding your information, get AI-generated summaries of their privacy policies, view an explainable privacy risk score, get notified of data breaches, and generate legally compliant deletion request letters under GDPR, India's DPDP Act, and CCPA, complete with deadline tracking.
 
 ## Features
@@ -24,9 +26,11 @@ Frontend: React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, React Router,
 
 Backend: FastAPI, async SQLAlchemy 2.0, PostgreSQL (SQLite for local development), Alembic, JWT and Google OAuth2, Celery, Redis, httpx, Jinja2 with WeasyPrint for PDF generation, HuggingFace Transformers or OpenAI for AI summarization
 
-Deployment: Docker, Docker Compose, GitHub Actions
+Deployment: Docker, Docker Compose, GitHub Actions, Render
 
 ## Getting Started
+
+The fastest way to try InfoHub is the live demo above. To run it locally instead, follow the steps below.
 
 ### Backend
 
