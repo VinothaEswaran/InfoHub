@@ -37,21 +37,21 @@ InfoHub is a web application that helps users manage and protect their personal 
 
 ### Backend
 
-bash
+```bash
 cd backend
 mvnw spring-boot:run
-
+```
 Backend runs at:
 
 http://localhost:8080
 
 ### Frontend
 
-bash
+````bash
 cd frontend
 npm install
 npm start
-
+````
 Frontend runs at:
 
 http://localhost:3000
