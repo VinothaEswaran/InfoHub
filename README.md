@@ -2,7 +2,7 @@
 
 InfoHub is a web application that helps users manage and protect their personal data. It allows users to track companies holding their data, identify privacy risks, monitor data breaches, generate deletion requests, and get AI-powered privacy recommendations.
 
-#Live demo link : https://infohub-1-a5pf.onrender.com
+## Live demo link : https://infohub-1-a5pf.onrender.com
 
 ## Tech Stack
 
